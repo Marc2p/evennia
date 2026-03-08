@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-06 01:46-0300\n"
-"PO-Revision-Date: 2026-03-06 23:44-0300\n"
+"PO-Revision-Date: 2026-03-07 22:29-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -612,16 +612,18 @@ msgid ""
 "\n"
 "You become |c{name}|n.\n"
 msgstr ""
+"\n"
+"Te conviertes en |c{name}|n.\n"
 
 #: .\objects\objects.py:3282
 #, python-brace-format
 msgid "{name} has entered the game."
-msgstr ""
+msgstr "{name} ha entrado al juego."
 
 #: .\objects\objects.py:3312
 #, python-brace-format
 msgid "{name} has left the game{reason}."
-msgstr ""
+msgstr "{name} ha dejado el juego{reason}."
 
 #: .\objects\objects.py:3363
 msgid "This is a room."
@@ -630,7 +632,7 @@ msgstr "Esta es una habitación."
 #: .\objects\objects.py:3505
 #, python-brace-format
 msgid " (exit to {destination})"
-msgstr ""
+msgstr " (salida a {destination})"
 
 #: .\objects\objects.py:3533
 msgid "This is an exit."
@@ -638,36 +640,39 @@ msgstr "Esta es una salida."
 
 #: .\objects\objects.py:3753
 msgid "You cannot go there."
-msgstr ""
+msgstr "No puedes ir ahí."
 
 #: .\prototypes\prototypes.py:56
 msgid "Error"
-msgstr ""
+msgstr "Error"
 
 #: .\prototypes\prototypes.py:57
 msgid "Warning"
-msgstr ""
+msgstr "Advertencia"
 
 #: .\prototypes\prototypes.py:423
 msgid "Prototype requires a prototype_key"
-msgstr ""
+msgstr "Prototipo requiere prototype_key"
 
 #: .\prototypes\prototypes.py:431 .\prototypes\prototypes.py:501
 #: .\prototypes\prototypes.py:1163
 #, python-brace-format
 msgid "{protkey} is a read-only prototype (defined as code in {module})."
 msgstr ""
+"{protkey} es un prototipo de solo lectura (definido como código en {module})."
 
 #: .\prototypes\prototypes.py:433 .\prototypes\prototypes.py:503
 #: .\prototypes\prototypes.py:1165
 #, python-brace-format
 msgid "{protkey} is a read-only prototype (passed directly as a dict)."
 msgstr ""
+"{protkey} es un prototipo de solo lectura (pasado directamente como "
+"diccionario)."
 
 #: .\prototypes\prototypes.py:510
 #, python-brace-format
 msgid "Prototype {prototype_key} was not found."
-msgstr ""
+msgstr "Prototipo {prototype_key} no encontrado."
 
 #: .\prototypes\prototypes.py:518
 #, python-brace-format
@@ -675,19 +680,21 @@ msgid ""
 "{caller} needs explicit 'edit' permissions to delete prototype "
 "{prototype_key}."
 msgstr ""
+"{caller} necesita permisos 'edit' explícitos para eliminar el prototipo "
+"{prototype_key}."
 
 #: .\prototypes\prototypes.py:828
 msgid "No prototypes found."
-msgstr ""
+msgstr "No se encontraron prototipos."
 
 #: .\prototypes\prototypes.py:875
 msgid "Prototype lacks a 'prototype_key'."
-msgstr ""
+msgstr "El prototipo no tiene 'prototype_key'."
 
 #: .\prototypes\prototypes.py:884
 #, python-brace-format
 msgid "Prototype {protkey} requires `typeclass` or 'prototype_parent'."
-msgstr ""
+msgstr "Prototipo {protkey} requiere typeclass o 'prototype_parent'."
 
 #: .\prototypes\prototypes.py:891
 #, python-brace-format
@@ -695,6 +702,8 @@ msgid ""
 "Prototype {protkey} can only be used as a mixin since it lacks 'typeclass' "
 "or 'prototype_parent' keys."
 msgstr ""
+"Prototipo {protkey} solo puede usarse como mixin porque no tiene 'typeclass' "
+"o 'prototype_parent'."
 
 #: .\prototypes\prototypes.py:902
 #, python-brace-format
@@ -702,22 +711,26 @@ msgid ""
 "{err}: Prototype {protkey} is based on typeclass {typeclass}, which could "
 "not be imported!"
 msgstr ""
+"{err}: Prototipo {protkey} se basa en typeclass {typeclass}, ¡que no se pudo "
+"importar!"
 
 #: .\prototypes\prototypes.py:921
 #, python-brace-format
 msgid "Prototype {protkey} tries to parent itself."
-msgstr ""
+msgstr "Prototipo {protkey} intenta heredar de sí mismo."
 
 #: .\prototypes\prototypes.py:933
 #, python-brace-format
 msgid ""
 "Prototype {protkey}'s `prototype_parent` (named '{parent}') was not found."
 msgstr ""
+"No se encontró el `prototype_parent` del prototipo {protkey} (llamado "
+"'{parent}')"
 
 #: .\prototypes\prototypes.py:941
 #, python-brace-format
 msgid "{protkey} has infinite nesting of prototypes."
-msgstr ""
+msgstr "{protkey} tiene anidamiento infinito de prototipos."
 
 #: .\prototypes\prototypes.py:970
 #, python-brace-format
@@ -726,6 +739,10 @@ msgid ""
 " chain. Add `typeclass`, or a `prototype_parent` pointing to a prototype "
 "with a typeclass."
 msgstr ""
+"Prototipo {protkey} no tiene ningún `typeclass` definido en su cadena de "
+"herencia.\n"
+"Agrega un `typeclass` o un `prototype_parent` que apunte a un prototipo con "
+"typeclass."
 
 #: .\prototypes\spawner.py:498
 #, python-brace-format
@@ -733,28 +750,22 @@ msgid ""
 "Diff contains non-dicts that are not on the form (old, new, action_to_take): "
 "{diffpart}"
 msgstr ""
+"Diff contiene elementos que no son diccionarios y que no siguen el formato "
+"(old, new, action_to_take): {diffpart}"
 
 #: .\scripts\scripthandler.py:51
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "\n"
-#| " '%(key)s' (%(next_repeat)s/%(interval)s, %(repeats)s repeats): %(desc)s"
+#, python-brace-format
 msgid ""
 "\n"
 " '{key}' ({next_repeat}/{interval}, {repeats} repeats): {desc}"
 msgstr ""
 "\n"
-" '%(key)s' (%(next_repeat)s/%(interval)s, %(repeats)s repite): %(desc)s"
+" '{key}' ({next_repeat}/{interval}, {repeats} repeticiones): {desc}"
 
 #: .\scripts\scripts.py:349
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Script %(key)s(#%(dbid)s) of type '%(cname)s': at_repeat() error '%"
-#| "(err)s'."
+#, python-brace-format
 msgid "Script {key}(#{dbid}) of type '{name}': at_repeat() error '{err}'."
-msgstr ""
-"El script %(key)s(#%(dbid)s) del tipo '%(cname)s': at_repeat() dio error '%"
-"(err)s'."
+msgstr "Script {key}(#{dbid}) de tipo '{name}': error en at_repeat() '{err}'."
 
 #: .\server\initial_setup.py:30
 msgid ""
@@ -794,30 +805,32 @@ msgid ""
 "{servername} DoS protection is active.You are queued to connect in {num} "
 "seconds ..."
 msgstr ""
+"La protección DoS de {servername} está activa. Te conectarás en {num} "
+"segundos ..."
 
 #: .\server\service.py:122
 msgid " (connection lost)"
-msgstr ""
+msgstr " (conexión perdida)"
 
 #: .\server\service.py:132
 msgid "idle timeout exceeded"
-msgstr "tiempo sin actividad excedido"
+msgstr "Se superó el tiempo de inactividad"
 
 #: .\server\sessionhandler.py:50
 msgid "Your client sent an incorrect UTF-8 sequence."
-msgstr ""
+msgstr "Tu cliente envió una secuencia UTF-8 incorrecta."
 
 #: .\server\sessionhandler.py:418
 msgid " ... Server restarted."
-msgstr " ... El servidor se reinició."
+msgstr " ... Servidor reiniciado."
 
 #: .\server\sessionhandler.py:648
 msgid "Logged in from elsewhere. Disconnecting."
-msgstr "Sesión iniciada desde otro lugar. Desconectando."
+msgstr "Has iniciado sesión desde otro lugar. Desconectando."
 
 #: .\server\sessionhandler.py:676
 msgid "Idle timeout exceeded, disconnecting."
-msgstr "Tiempo sin actividad excedido, desconectando."
+msgstr "Se superó el tiempo de inactividad, desconectando."
 
 #: .\server\throttle.py:23
 msgid ""
