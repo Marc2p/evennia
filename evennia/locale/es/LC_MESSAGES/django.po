@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-06 01:46-0300\n"
-"PO-Revision-Date: 2026-03-07 22:29-0300\n"
+"PO-Revision-Date: 2026-03-08 22:31-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -287,7 +287,7 @@ msgid ""
 "(Traceback was logged {timestamp})"
 msgstr ""
 "{traceback}\n"
-"Error al compilar/ejecutar cmdset '{path}'.\",\n"
+"Error al compilar/ejecutar cmdset '{path}'.\n"
 "(Traceback registrado en {timestamp})"
 
 #: .\commands\cmdsethandler.py:114
@@ -431,7 +431,7 @@ msgstr "Administrar otro reporte"
 #: .\locks\lockhandler.py:242
 #, python-brace-format
 msgid "Lock: lock-function '{lockfunc}' is not available."
-msgstr "Lock: la función de bloqueo '{lockfunc}' no está disponible."
+msgstr "Lock: lock-function '{lockfunc}' no está disponible."
 
 #: .\locks\lockhandler.py:265
 #, python-brace-format
@@ -504,7 +504,7 @@ msgstr "Este lugar no debería existir... contacta a un administrador."
 #: .\objects\objects.py:1557
 #, python-brace-format
 msgid "Your character {key} has been destroyed."
-msgstr "Tu personaje {key} ha sido destruído."
+msgstr "Tu personaje {key} ha sido destruido."
 
 #: .\objects\objects.py:1796 .\objects\objects.py:1815
 #: .\objects\objects.py:1844
@@ -814,7 +814,7 @@ msgstr " (conexión perdida)"
 
 #: .\server\service.py:132
 msgid "idle timeout exceeded"
-msgstr "Se superó el tiempo de inactividad"
+msgstr "se superó el tiempo de inactividad"
 
 #: .\server\sessionhandler.py:50
 msgid "Your client sent an incorrect UTF-8 sequence."
@@ -836,6 +836,8 @@ msgstr "Se superó el tiempo de inactividad, desconectando."
 msgid ""
 "Too many failed attempts; you must wait a few minutes before trying again."
 msgstr ""
+"Demasiados intentos fallidos; espera unos minutos antes de volver a "
+"intentarlo."
 
 #: .\server\validators.py:32
 msgid "Sorry, that username is reserved."
@@ -847,7 +849,7 @@ msgstr "Ese nombre de usuario ya está en uso."
 
 #: .\typeclasses\models.py:896
 msgid " (carried)"
-msgstr ""
+msgstr " (llevado)"
 
 #: .\utils\eveditor.py:113
 msgid ""
@@ -857,6 +859,12 @@ msgid ""
 "    <w>   - a single word, or multiple words with quotes around them.\n"
 "    <txt> - longer string, usually not needing quotes.\n"
 msgstr ""
+"\n"
+"    Leyenda:\n"
+"    <l>   - número de línea, como '5' o un rango, '3:7'.\n"
+"    <w>   - una o varias palabras entre comillas.\n"
+"    <txt> - una cadena de caracteres más larga, normalmente no requiere "
+"comillas.\n"
 
 #: .\utils\eveditor.py:122
 msgid ""
@@ -866,6 +874,13 @@ msgid ""
 " :>    - Increase the level of automatic indentation for the next lines\n"
 " :=    - Switch automatic indentation on/off\n"
 msgstr ""
+"\n"
+" :!    - Ejecutar buffer de código sin guardar\n"
+" :<    - Reducir el nivel de indentación automática para las siguientes "
+"líneas\n"
+" :>    - Aumentar el nivel de indentación automática para las siguientes "
+"líneas\n"
+" :=    - Activar/desactivar la indentación automática\n"
 
 #: .\utils\eveditor.py:133
 #, python-brace-format
@@ -875,6 +890,11 @@ msgid ""
 "\n"
 "|rBuffer load function error. Could not load initial data.|n\n"
 msgstr ""
+"\n"
+"{error}\n"
+"\n"
+"|rError en Buffer load function. No se pudieron cargar los datos iniciales.|"
+"n\n"
 
 #: .\utils\eveditor.py:141
 #, python-brace-format
@@ -884,18 +904,22 @@ msgid ""
 "\n"
 "|rSave function returned an error. Buffer not saved.|n\n"
 msgstr ""
+"\n"
+"{error}\n"
+"\n"
+"|rSave function devolvió un error. Buffer no guardado.|n\n"
 
 #: .\utils\eveditor.py:148
 msgid "|rNo save function defined. Buffer cannot be saved.|n"
-msgstr ""
+msgstr "|rSave function no definida. Buffer no se puede guardar.|n"
 
 #: .\utils\eveditor.py:150
 msgid "No changes need saving"
-msgstr ""
+msgstr "No es necesario guardar cambios"
 
 #: .\utils\eveditor.py:151
 msgid "Exited editor."
-msgstr ""
+msgstr "Has salido del editor."
 
 #: .\utils\eveditor.py:154
 #, python-brace-format
@@ -905,6 +929,10 @@ msgid ""
 "\n"
 "|rQuit function gave an error. Skipping.|n\n"
 msgstr ""
+"\n"
+"{error}\n"
+"\n"
+"|rQuit function devolvió un error. Omitiendo.|n\n"
 
 #: .\utils\eveditor.py:162
 #, python-brace-format
@@ -916,6 +944,13 @@ msgid ""
 "to non-persistent mode (which means the editor session won't survive\n"
 "an eventual server reload - so save often!)|n\n"
 msgstr ""
+"\n"
+"{error}\n"
+"\n"
+"|rNo se pudo guardar el estado del editor en modo persistente. Cambiando\n"
+"a modo no persistente (lo que significa que la sesión del editor no "
+"sobrevivirá\n"
+"a un reinicio del servidor - ¡Así que no te olvides de guardar!)|n\n"
 
 #: .\utils\eveditor.py:172
 msgid ""
@@ -923,233 +958,233 @@ msgid ""
 "EvEditor callbacks could not be pickled, for example because it's a class "
 "method or is defined inside another function."
 msgstr ""
+"Error en modo persistente de EvEditor. Normalmente esto ocurre porque uno o "
+"más callbacks de EvEditor no pudieron ser serializados, por ejemplo porque "
+"es un método de clase, o se definió dentro de otra función."
 
 #: .\utils\eveditor.py:178
 msgid "Nothing to undo."
-msgstr ""
+msgstr "Nada que deshacer."
 
 #: .\utils\eveditor.py:179
 msgid "Nothing to redo."
-msgstr ""
+msgstr "Nada que rehacer."
 
 #: .\utils\eveditor.py:180
 msgid "Undid one step."
-msgstr ""
+msgstr "Se deshizo un paso."
 
 #: .\utils\eveditor.py:181
 msgid "Redid one step."
-msgstr ""
+msgstr "Se rehizo un paso."
 
 #: .\utils\eveditor.py:508
 msgid "Single ':' added to buffer."
-msgstr ""
+msgstr "Se añadió ':' al buffer."
 
 #: .\utils\eveditor.py:523
 msgid "Save before quitting?"
-msgstr ""
+msgstr "¿Guardar antes de salir?"
 
 #: .\utils\eveditor.py:538
 msgid "Reverted all changes to the buffer back to original state."
-msgstr ""
+msgstr "Se revirtieron todos los cambios del buffer a su estado original."
 
 #: .\utils\eveditor.py:543
 #, python-brace-format
 msgid "Deleted {string}."
-msgstr ""
+msgstr "Se eliminó {string}."
 
 #: .\utils\eveditor.py:548
 msgid "You must give a search word to delete."
-msgstr ""
+msgstr "Debes indicar una palabra de búsqueda para eliminar."
 
 #: .\utils\eveditor.py:554
 #, python-brace-format
 msgid "Removed {arg1} for lines {l1}-{l2}."
-msgstr ""
+msgstr "Se eliminó {arg1} de las líneas {l1}-{l2}."
 
 #: .\utils\eveditor.py:560
 #, python-brace-format
 msgid "Removed {arg1} for {line}."
-msgstr ""
+msgstr "Se eliminó {arg1} de {line}."
 
 #: .\utils\eveditor.py:576
 #, python-brace-format
 msgid "Cleared {nlines} lines from buffer."
-msgstr ""
+msgstr "Se eliminaron {nlines} líneas del buffer."
 
 #: .\utils\eveditor.py:581
 #, python-brace-format
 msgid "{line}, {cbuf} yanked."
-msgstr ""
+msgstr "{line}, {cbuf} copiado."
 
 #: .\utils\eveditor.py:588
 #, python-brace-format
 msgid "{line}, {cbuf} cut."
-msgstr ""
+msgstr "{line}, {cbuf} cortado."
 
 #: .\utils\eveditor.py:592
 msgid "Copy buffer is empty."
-msgstr ""
+msgstr "Buffer de copia vacío."
 
 #: .\utils\eveditor.py:597
 #, python-brace-format
 msgid "Pasted buffer {cbuf} to {line}."
-msgstr ""
+msgstr "Se pegó {cbuf} en {line}."
 
 #: .\utils\eveditor.py:605
 msgid "You need to enter a new line and where to insert it."
-msgstr ""
+msgstr "Debes ingresar una nueva línea y dónde insertarla."
 
 #: .\utils\eveditor.py:610
 #, python-brace-format
 msgid "Inserted {num} new line(s) at {line}."
-msgstr ""
+msgstr "Se insertaron {num} línea(s) en {line}."
 
 #: .\utils\eveditor.py:618
 msgid "You need to enter a replacement string."
-msgstr ""
+msgstr "Debes ingresar una cadena de reemplazo."
 
 #: .\utils\eveditor.py:623
 #, python-brace-format
 msgid "Replaced {num} line(s) at {line}."
-msgstr ""
+msgstr "Se reemplazaron {num} línea(s) en {line}."
 
 #: .\utils\eveditor.py:630
 msgid "You need to enter text to insert."
-msgstr ""
+msgstr "Debes ingresar el texto a insertar."
 
 #: .\utils\eveditor.py:638
 #, python-brace-format
 msgid "Inserted text at beginning of {line}."
-msgstr ""
+msgstr "Se insertó texto al comienzo de {line}."
 
 #: .\utils\eveditor.py:642
 msgid "You need to enter text to append."
-msgstr ""
+msgstr "Debes ingresar el texto a añadir."
 
 #: .\utils\eveditor.py:650
 #, python-brace-format
 msgid "Appended text to end of {line}."
-msgstr ""
+msgstr "Se añadió texto al final de {line}."
 
 #: .\utils\eveditor.py:655
 msgid "You must give a search word and something to replace it with."
-msgstr ""
+msgstr "Debes indicar una palabra de búsqueda y algo con lo que reemplazarla."
 
 #: .\utils\eveditor.py:674
 msgid "Invalid regular expression."
-msgstr ""
+msgstr "Expresión regular no válida."
 
 #: .\utils\eveditor.py:678
 #, python-brace-format
 msgid "Search-replaced {arg1} -> {arg2} for lines {l1}-{l2}."
-msgstr ""
+msgstr "Se reemplazó {arg1} -> {arg2} en las líneas {l1}-{l2}."
 
 #: .\utils\eveditor.py:684
 #, python-brace-format
 msgid "Search-replaced {arg1} -> {arg2} for {line}."
-msgstr ""
+msgstr "Se reemplazó {arg1} -> {arg2} en línea {line}."
 
 #: .\utils\eveditor.py:703
 #, python-brace-format
 msgid "Flood filled lines {l1}-{l2}."
-msgstr ""
+msgstr "Se formatearon las líneas {l1}-{l2}."
 
 #: .\utils\eveditor.py:705
 #, python-brace-format
 msgid "Flood filled {line}."
-msgstr ""
+msgstr "Se formateó la línea {line}."
 
 #: .\utils\eveditor.py:730
 msgid "Valid justifications are"
-msgstr ""
+msgstr "Las justificaciones válidas son"
 
 #: .\utils\eveditor.py:746
 #, python-brace-format
 msgid "{align}-justified lines {l1}-{l2}."
-msgstr ""
+msgstr "Líneas {l1}-{l2} justificadas a {align}."
 
 #: .\utils\eveditor.py:752
 #, python-brace-format
 msgid "{align}-justified {line}."
-msgstr ""
+msgstr "Línea {line} justificada a {align}."
 
 #: .\utils\eveditor.py:764
 #, python-brace-format
 msgid "Indented lines {l1}-{l2}."
-msgstr ""
+msgstr "Líneas {l1}-{l2} indentadas."
 
 #: .\utils\eveditor.py:766
 #, python-brace-format
 msgid "Indented {line}."
-msgstr ""
+msgstr "Línea {line} indentada."
 
 #: .\utils\eveditor.py:776
 #, python-brace-format
 msgid "Removed left margin (dedented) lines {l1}-{l2}."
-msgstr ""
+msgstr "Se eliminó la indentación de las líneas {l1}-{l2}."
 
 #: .\utils\eveditor.py:781
 #, python-brace-format
 msgid "Removed left margin (dedented) {line}."
-msgstr ""
+msgstr "Se eliminó la indentación de la línea {line}."
 
 #: .\utils\eveditor.py:789
 #, python-brace-format
 msgid "Echo mode set to {mode}"
-msgstr ""
+msgstr "Eco de entrada establecido en {mode}"
 
 #: .\utils\eveditor.py:794 .\utils\eveditor.py:809 .\utils\eveditor.py:824
 #: .\utils\eveditor.py:835
 msgid "This command is only available in code editor mode."
-msgstr ""
+msgstr "Este comando solo está disponible en el modo editor de código."
 
 #: .\utils\eveditor.py:802
 #, python-brace-format
 msgid "Decreased indentation: new indentation is {indent}."
-msgstr ""
+msgstr "Se redujo la indentación: la nueva indentación es {indent}."
 
 #: .\utils\eveditor.py:807 .\utils\eveditor.py:822
 msgid "|rManual indentation is OFF.|n Use := to turn it on."
-msgstr ""
+msgstr "|rIndentación manual desactivada.|n Usa := para activarla."
 
 #: .\utils\eveditor.py:817
 #, python-brace-format
 msgid "Increased indentation: new indentation is {indent}."
-msgstr ""
+msgstr "Se aumentó la indentación: la nueva indentación es {indent}."
 
 #: .\utils\eveditor.py:831
 msgid "Auto-indentation turned on."
-msgstr ""
+msgstr "Indentación automática activada."
 
 #: .\utils\eveditor.py:833
 msgid "Auto-indentation turned off."
-msgstr ""
+msgstr "Indentación automática desactivada."
 
 #: .\utils\eveditor.py:1133
 #, python-brace-format
 msgid "Line Editor [{name}]"
-msgstr ""
+msgstr "Editor [{name}]"
 
 #: .\utils\eveditor.py:1141
 msgid "(:h for help)"
-msgstr ""
+msgstr "(:h para ayuda)"
 
 #: .\utils\evmenu.py:310
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Menu node '{nodename}' is either not implemented or caused an error. Make "
-#| "another choice."
+#, python-brace-format
 msgid ""
 "Menu node '{nodename}' is either not implemented or caused an error. Make "
 "another choice or try 'q' to abort."
 msgstr ""
-"Nodo del menú '{nodename}' no está implementado o causó un error. Selecciona "
-"otra opción."
+"La opción de menú '{nodename}' no está implementada o produjo un error. "
+"Elige otra opción o escribe 'q' para cancelar."
 
 #: .\utils\evmenu.py:313
 #, python-brace-format
 msgid "Error in menu node '{nodename}'."
-msgstr "Error en el nodo del menú '{nodename}'."
+msgstr "Error en la opción de menú '{nodename}'."
 
 #: .\utils\evmenu.py:314
 msgid "No description."
@@ -1157,67 +1192,67 @@ msgstr "Sin descripción."
 
 #: .\utils\evmenu.py:315
 msgid "Commands: <menu option>, help, quit"
-msgstr "Comandos: <menu option>, help, quit"
+msgstr "Comandos: <opción>, help, quit"
 
 #: .\utils\evmenu.py:316
 msgid "Commands: <menu option>, help"
-msgstr "Comandos: <menu option>, help"
+msgstr "Comandos: <opción>, help"
 
 #: .\utils\evmenu.py:317
 msgid "Commands: help, quit"
-msgstr "Comandos: ayuda, quit"
+msgstr "Comandos: help, quit"
 
 #: .\utils\evmenu.py:318
 msgid "Commands: help"
-msgstr "Comandos: ayuda"
+msgstr "Comandos: help"
 
 #: .\utils\evmenu.py:319 .\utils\evmenu.py:1850
 msgid "Choose an option or try 'help'."
-msgstr "Elige una opción o prueba 'ayuda'."
+msgstr "Elige una opción o prueba 'help'."
 
 #: .\utils\evmenu.py:1356
 msgid "|rInvalid choice.|n"
-msgstr ""
+msgstr "|rElección no válida.|n"
 
 #: .\utils\evmenu.py:1419
 msgid "|Wcurrent|n"
-msgstr ""
+msgstr "|Wactual|n"
 
 #: .\utils\evmenu.py:1427
 msgid "|wp|Wrevious page|n"
-msgstr ""
+msgstr "|wp|Wágina anterior|n"
 
 #: .\utils\evmenu.py:1437
 msgid "|wn|Wext page|n"
-msgstr ""
+msgstr "|wp|Wágina siguiente|n"
 
 #: .\utils\evmenu.py:1682
 msgid "Aborted."
-msgstr ""
+msgstr "Cancelado."
 
 #: .\utils\evmenu.py:1705
 msgid "|rError in ask_yes_no. Choice not confirmed (report to admin)|n"
-msgstr ""
+msgstr "|rError en ask_yes_no. No se confirmó la opción (avisa a un admin)|n"
 
 #: .\utils\evmore.py:244
 msgid "|xExited pager.|n"
-msgstr ""
+msgstr "|xSaliste del paginador.|n"
 
 #: .\utils\optionhandler.py:139 .\utils\optionhandler.py:164
 msgid "Option not found!"
-msgstr ""
+msgstr "¡Opción no encontrada!"
 
 #: .\utils\optionhandler.py:161
 msgid "Option field blank!"
-msgstr ""
+msgstr "¡Campo de opción en blanco!"
 
 #: .\utils\optionhandler.py:167
 msgid "Multiple matches:"
-msgstr "Hubo varias coincidencias:"
+msgstr "Varias coincidencias:"
 
 #: .\utils\optionhandler.py:167
 msgid "Please be more specific."
-msgstr ""
+msgstr "Sé más específico."
 
 #: .\utils\utils.py:2249
 #, python-brace-format
@@ -1225,6 +1260,8 @@ msgid ""
 "{obj}.{handlername} is a handler and can't be set directly. To add values, "
 "use `{obj}.{handlername}.add()` instead."
 msgstr ""
+"{obj}.{handlername} es un handler y no se puede asignar directamente. Para "
+"añadir valores, usa {obj}.{handlername}.add()."
 
 #: .\utils\utils.py:2259
 #, python-brace-format
@@ -1232,6 +1269,8 @@ msgid ""
 "{obj}.{handlername} is a handler and can't be deleted directly. To remove "
 "values, use `{obj}.{handlername}.remove()` instead."
 msgstr ""
+"{obj}.{handlername} es un handler y no se puede eliminar directamente. Para "
+"quitar valores, usa {obj}.{handlername}.remove()."
 
 #: .\utils\utils.py:2411
 #, python-brace-format
@@ -1246,120 +1285,124 @@ msgstr "Más de una coincidencia para '{query}' (sé más específico):\n"
 #: .\utils\validatorfuncs.py:28
 #, python-brace-format
 msgid "Input could not be converted to text ({err})"
-msgstr ""
+msgstr "La entrada no se puede convertir a texto ({err})"
 
 #: .\utils\validatorfuncs.py:37
 #, python-brace-format
 msgid "Nothing entered for a {option_key}!"
-msgstr ""
+msgstr "¡No se ingresó nada para {option_key}!"
 
 #: .\utils\validatorfuncs.py:41
 #, python-brace-format
 msgid "'{entry}' is not a valid {option_key}."
-msgstr ""
+msgstr "'{entry}' no es un valor válido para {option_key}."
 
 #: .\utils\validatorfuncs.py:66 .\utils\validatorfuncs.py:239
 #, python-brace-format
 msgid "No {option_key} entered!"
-msgstr ""
+msgstr "¡No se ingresó {option_key}!"
 
 #: .\utils\validatorfuncs.py:75
 #, python-brace-format
 msgid "Timezone string '{acct_tz}' is not a valid timezone ({err})"
-msgstr ""
+msgstr "La zona horaria ingresada '{acct_tz}' no es válida ({err})"
 
 #: .\utils\validatorfuncs.py:92 .\utils\validatorfuncs.py:100
 #, python-brace-format
 msgid "{option_key} must be entered in a 24-hour format such as: {timeformat}"
 msgstr ""
+"{option_key} debe estar en formato de 24 horas, por ejemplo: {timeformat}."
 
 #: .\utils\validatorfuncs.py:144
 #, python-brace-format
 msgid "Could not convert section '{interval}' to a {option_key}."
-msgstr ""
+msgstr "No se pudo convertir la sección '{interval}' en {option_key}."
 
 #: .\utils\validatorfuncs.py:156
 #, python-brace-format
 msgid "That {option_key} is in the past! Must give a Future datetime!"
 msgstr ""
+"¡{option_key} está en el pasado! ¡Debes indicar una fecha en el futuro!"
 
 #: .\utils\validatorfuncs.py:166
 #, python-brace-format
 msgid "Must enter a whole number for {option_key}!"
-msgstr ""
+msgstr "¡{option_key} debe ser un número entero!"
 
 #: .\utils\validatorfuncs.py:172
 #, python-brace-format
 msgid "Could not convert '{entry}' to a whole number for {option_key}!"
-msgstr ""
+msgstr "¡No se pudo convertir '{entry}' a un número entero para {option_key}!"
 
 #: .\utils\validatorfuncs.py:183
 #, python-brace-format
 msgid "Must enter a whole number greater than 0 for {option_key}!"
-msgstr ""
+msgstr "¡Debes ingresar un número entero mayor que 0 para {option_key}!"
 
 #: .\utils\validatorfuncs.py:194
 #, python-brace-format
 msgid "{option_key} must be a whole number greater than or equal to 0!"
-msgstr ""
+msgstr "¡{option_key} debe ser un número entero mayor o igual que 0!"
 
 #: .\utils\validatorfuncs.py:213
 #, python-brace-format
 msgid "Must enter a true/false input for {option_key}. Accepts {alternatives}."
 msgstr ""
+"Debes ingresar true/false para {option_key}. Valores aceptados: "
+"{alternatives}."
 
 #: .\utils\validatorfuncs.py:243
 #, python-brace-format
 msgid "That matched: {matches}. Please be more specific!"
-msgstr ""
+msgstr "Coincidencias: {matches}. ¡Sé más específico!"
 
 #: .\utils\validatorfuncs.py:250
 #, python-brace-format
 msgid "Could not find timezone '{entry}' for {option_key}!"
-msgstr ""
+msgstr "¡No se encontró la zona horaria '{entry}' para {option_key}!"
 
 #: .\utils\validatorfuncs.py:258
 msgid "Email address field empty!"
-msgstr ""
+msgstr "¡El campo de dirección de correo electrónico está en blanco!"
 
 #: .\utils\validatorfuncs.py:261
 #, python-brace-format
 msgid "That isn't a valid {option_key}!"
-msgstr ""
+msgstr "¡Ese valor no es válido para {option_key}!"
 
 #: .\utils\validatorfuncs.py:268
 #, python-brace-format
 msgid "No {option_key} entered to set!"
-msgstr ""
+msgstr "¡No se ingresó ningún valor para {option_key}!"
 
 #: .\utils\validatorfuncs.py:272
 msgid "Must enter an access type!"
-msgstr ""
+msgstr "¡Debes ingresar un access type!"
 
 #: .\utils\validatorfuncs.py:276
 #, python-brace-format
 msgid "Access type must be one of: {alternatives}"
-msgstr ""
+msgstr "Access type debe ser uno de los siguientes: {alternatives}"
 
 #: .\utils\validatorfuncs.py:281
 msgid "Lock func not entered."
-msgstr ""
+msgstr "No se ingresó una lock func."
 
 #: .\web\templates\admin\app_list.html:19
 msgid "Add"
-msgstr ""
+msgstr "Añadir"
 
 #: .\web\templates\admin\app_list.html:26
 msgid "View"
-msgstr ""
+msgstr "Ver"
 
 #: .\web\templates\admin\app_list.html:28
 msgid "Change"
-msgstr ""
+msgstr "Cambio"
 
 #: .\web\templates\admin\app_list.html:39
 msgid "You don’t have permission to view or edit anything."
-msgstr ""
+msgstr "No tienes permiso para ver o editar nada."
 
 #, fuzzy, python-brace-format
 #~| msgid ""
