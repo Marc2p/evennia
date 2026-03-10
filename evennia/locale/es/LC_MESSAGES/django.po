@@ -1,16 +1,16 @@
 # Spanish 
 # Copyright (C) Evennia
 # This file is distributed under the same license as the Evennia package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Marcos Peirone <marcos@marcospeirone.com.ar>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: Evennia\n"
+"Report-Msgid-Bugs-To: https://github.com/evennia/evennia/issues\n"
 "POT-Creation-Date: 2026-03-06 01:46-0300\n"
 "PO-Revision-Date: 2026-03-09 21:13-0300\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"Last-Translator: Marcos Peirone <marcos@marcospeirone.com.ar>\n"
+"Language-Team: Spanish\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
