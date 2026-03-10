@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-06 01:46-0300\n"
-"PO-Revision-Date: 2026-03-08 22:31-0300\n"
+"PO-Revision-Date: 2026-03-09 21:13-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -94,7 +94,7 @@ msgstr ""
 #: .\accounts\accounts.py:1130 .\accounts\accounts.py:2055
 msgid "An error occurred. Please e-mail an admin if the problem persists."
 msgstr ""
-"Se produjo un error. Contacta con un administrador si el problema continúa."
+"Se produjo un error. Si el problema continúa, contacta con un administrador."
 
 #: .\accounts\accounts.py:1163
 msgid "Account being deleted."
@@ -121,7 +121,7 @@ msgstr "Las cuentas de invitado están desactivadas en este servidor."
 #: .\accounts\accounts.py:2018
 msgid "All guest accounts are in use. Please try again later."
 msgstr ""
-"Todas las cuentas de invitado están en uso. Inténtalo de nuevo más tarde."
+"Se están usando todas las cuentas de invitado. Inténtalo de nuevo más tarde."
 
 #: .\commands\cmdhandler.py:85
 msgid ""
@@ -169,7 +169,7 @@ msgid ""
 "multiple causes.\n"
 msgstr ""
 "\n"
-"¡No se han encontrado comandos! Este es un error crítico\n"
+"No se han encontrado comandos. Este es un error crítico\n"
 "que puede deberse a múltiples causas.\n"
 
 #: .\commands\cmdhandler.py:119
@@ -180,7 +180,7 @@ msgid ""
 "the server admin through\" some other means for assistance.\n"
 msgstr ""
 "\n"
-"¡No se han encontrado comandos! Este es un error crítico. Si\n"
+"No se han encontrado comandos. Este es un error crítico. Si\n"
 "desconectarte y volver a conectarte no soluciona el problema, \n"
 "contacta con el administrador del servidor por otros medios.\n"
 
@@ -245,7 +245,7 @@ msgstr "o"
 
 #: .\commands\cmdhandler.py:749
 msgid " Type \"help\" for help."
-msgstr " Escribe \"ayuda\" para obtener ayuda."
+msgstr " Para obtener ayuda, escribe \"help\"."
 
 #: .\commands\cmdsethandler.py:91
 #, python-brace-format
@@ -322,7 +322,7 @@ msgstr "{mergetype} personalizado en cmdset '{cmdset}'"
 
 #: .\commands\cmdsethandler.py:458
 msgid "Only CmdSets can be added to the cmdsethandler!"
-msgstr "¡Solo se pueden añadir CmdSets a cmdsethandler!"
+msgstr "Solo se pueden añadir CmdSets a cmdsethandler."
 
 #: .\contrib\base_systems\ingame_reports\menu.py:18
 msgid "closed"
@@ -354,7 +354,7 @@ msgstr "Administrando {hub_name} {status}"
 #: .\contrib\base_systems\ingame_reports\menu.py:64
 #, python-brace-format
 msgid "No open {hub_name} at the moment."
-msgstr "No hay {hub_name} abiertos en este momento."
+msgstr "No hay {hub_name} abierto en este momento."
 
 #: .\contrib\base_systems\ingame_reports\menu.py:80
 msgid "|uF|nilter by status"
@@ -486,11 +486,11 @@ msgstr "El destino no existe."
 #: .\objects\objects.py:1361
 #, python-brace-format
 msgid "Could not find default home '(#{dbid})'."
-msgstr "No se pudo encontrar el hogar por defecto '(#{dbid})'."
+msgstr "No se pudo encontrar el home predeterminado '(#{dbid})'."
 
 #: .\objects\objects.py:1375
 msgid "Something went wrong! You are dumped into nowhere. Contact an admin."
-msgstr "¡Algo salió mal! Has caído en la nada. Contacta a un administrador."
+msgstr "Algo salió mal, has caído en la nada. Contacta a un administrador."
 
 #: .\objects\objects.py:1386
 #, python-brace-format
@@ -604,7 +604,7 @@ msgstr "|rYa existe un personaje llamado '|w{name}|r'.|n"
 #: .\objects\objects.py:3258
 #, python-brace-format
 msgid "|r{obj} has no location and no home is set.|n"
-msgstr "|r{obj} no tiene ubicación y no se estableció un hogar.|n"
+msgstr "|r{obj} no tiene ubicación y no se estableció un home.|n"
 
 #: .\objects\objects.py:3277
 #, python-brace-format
@@ -627,7 +627,7 @@ msgstr "{name} ha dejado el juego{reason}."
 
 #: .\objects\objects.py:3363
 msgid "This is a room."
-msgstr "Esta es una habitación."
+msgstr "Esta es una room."
 
 #: .\objects\objects.py:3505
 #, python-brace-format
@@ -648,7 +648,7 @@ msgstr "Error"
 
 #: .\prototypes\prototypes.py:57
 msgid "Warning"
-msgstr "Advertencia"
+msgstr "Aviso"
 
 #: .\prototypes\prototypes.py:423
 msgid "Prototype requires a prototype_key"
@@ -711,8 +711,8 @@ msgid ""
 "{err}: Prototype {protkey} is based on typeclass {typeclass}, which could "
 "not be imported!"
 msgstr ""
-"{err}: Prototipo {protkey} se basa en typeclass {typeclass}, ¡que no se pudo "
-"importar!"
+"{err}: Prototipo {protkey} se basa en typeclass {typeclass}, que no se pudo "
+"importar."
 
 #: .\prototypes\prototypes.py:921
 #, python-brace-format
@@ -780,15 +780,15 @@ msgid ""
 "play the demo game.\n"
 msgstr ""
 "\n"
-"¡Bienvenido a tu nuevo Juego basado en |wEvennia|n! Visita https://"
+"¡Bienvenido a tu nuevo juego basado en |wEvennia|n! Visita https://"
 "www.evennia.com si necesitas\n"
 "ayuda, quieres contribuir, reportar un error o simplemente unirte a la "
 "comunidad.\n"
 "\n"
 "Como superusuario puedes escribir |wbatchcommand tutorial_world.build|n para "
-"construir\n"
-"un pequeño tutorial. Una vez construido escribe |wintro|n para obtener ayuda "
-"y |wtutorial|n para\n"
+"crear\n"
+"un pequeño tutorial. Una vez creado escribe |wintro|n para obtener ayuda y |"
+"wtutorial|n para\n"
 "comenzar a jugar la demo.\n"
 
 #: .\server\initial_setup.py:104
@@ -915,7 +915,7 @@ msgstr "|rSave function no definida. Buffer no se puede guardar.|n"
 
 #: .\utils\eveditor.py:150
 msgid "No changes need saving"
-msgstr "No es necesario guardar cambios"
+msgstr "No es necesario guardar los cambios"
 
 #: .\utils\eveditor.py:151
 msgid "Exited editor."
@@ -947,10 +947,10 @@ msgstr ""
 "\n"
 "{error}\n"
 "\n"
-"|rNo se pudo guardar el estado del editor en modo persistente. Cambiando\n"
-"a modo no persistente (lo que significa que la sesión del editor no "
-"sobrevivirá\n"
-"a un reinicio del servidor - ¡Así que no te olvides de guardar!)|n\n"
+"|rNo se pudo guardar el estado del editor en modo de autoguardado. "
+"Cambiando\n"
+"a modo manual (lo que significa que la sesión del editor no sobrevivirá\n"
+"a un reinicio del servidor - así que no te olvides de guardar)|n\n"
 
 #: .\utils\eveditor.py:172
 msgid ""
@@ -958,9 +958,9 @@ msgid ""
 "EvEditor callbacks could not be pickled, for example because it's a class "
 "method or is defined inside another function."
 msgstr ""
-"Error en modo persistente de EvEditor. Normalmente esto ocurre porque uno o "
-"más callbacks de EvEditor no pudieron ser serializados, por ejemplo porque "
-"es un método de clase, o se definió dentro de otra función."
+"Error en modo de autoguardado de EvEditor. Normalmente esto ocurre porque "
+"uno o más callbacks de EvEditor no pudieron ser serializados, por ejemplo "
+"porque es un método de clase, o se definió dentro de otra función."
 
 #: .\utils\eveditor.py:178
 msgid "Nothing to undo."
@@ -997,7 +997,7 @@ msgstr "Se eliminó {string}."
 
 #: .\utils\eveditor.py:548
 msgid "You must give a search word to delete."
-msgstr "Debes indicar una palabra de búsqueda para eliminar."
+msgstr "Debes indicar un término que eliminar."
 
 #: .\utils\eveditor.py:554
 #, python-brace-format
@@ -1071,7 +1071,7 @@ msgstr "Se añadió texto al final de {line}."
 
 #: .\utils\eveditor.py:655
 msgid "You must give a search word and something to replace it with."
-msgstr "Debes indicar una palabra de búsqueda y algo con lo que reemplazarla."
+msgstr "Debes indicar un término y algo con que reemplazarlo."
 
 #: .\utils\eveditor.py:674
 msgid "Invalid regular expression."
@@ -1240,11 +1240,11 @@ msgstr "|xSaliste del paginador.|n"
 
 #: .\utils\optionhandler.py:139 .\utils\optionhandler.py:164
 msgid "Option not found!"
-msgstr "¡Opción no encontrada!"
+msgstr "Opción no encontrada."
 
 #: .\utils\optionhandler.py:161
 msgid "Option field blank!"
-msgstr "¡Campo de opción en blanco!"
+msgstr "Campo de opción en blanco"
 
 #: .\utils\optionhandler.py:167
 msgid "Multiple matches:"
@@ -1252,7 +1252,7 @@ msgstr "Varias coincidencias:"
 
 #: .\utils\optionhandler.py:167
 msgid "Please be more specific."
-msgstr "Sé más específico."
+msgstr "Sé más concreto."
 
 #: .\utils\utils.py:2249
 #, python-brace-format
@@ -1280,7 +1280,7 @@ msgstr "No se pudo encontrar '{query}'."
 #: .\utils\utils.py:2418
 #, python-brace-format
 msgid "More than one match for '{query}' (please narrow target):\n"
-msgstr "Más de una coincidencia para '{query}' (sé más específico):\n"
+msgstr "Más de una coincidencia para '{query}' (sé más concreto):\n"
 
 #: .\utils\validatorfuncs.py:28
 #, python-brace-format
@@ -1290,7 +1290,7 @@ msgstr "La entrada no se puede convertir a texto ({err})"
 #: .\utils\validatorfuncs.py:37
 #, python-brace-format
 msgid "Nothing entered for a {option_key}!"
-msgstr "¡No se ingresó nada para {option_key}!"
+msgstr "No se ingresó nada para {option_key}."
 
 #: .\utils\validatorfuncs.py:41
 #, python-brace-format
@@ -1300,7 +1300,7 @@ msgstr "'{entry}' no es un valor válido para {option_key}."
 #: .\utils\validatorfuncs.py:66 .\utils\validatorfuncs.py:239
 #, python-brace-format
 msgid "No {option_key} entered!"
-msgstr "¡No se ingresó {option_key}!"
+msgstr "No se ingresó {option_key}."
 
 #: .\utils\validatorfuncs.py:75
 #, python-brace-format
@@ -1321,28 +1321,27 @@ msgstr "No se pudo convertir la sección '{interval}' en {option_key}."
 #: .\utils\validatorfuncs.py:156
 #, python-brace-format
 msgid "That {option_key} is in the past! Must give a Future datetime!"
-msgstr ""
-"¡{option_key} está en el pasado! ¡Debes indicar una fecha en el futuro!"
+msgstr "{option_key} es una fecha pasada. Debes indicar una fecha futura."
 
 #: .\utils\validatorfuncs.py:166
 #, python-brace-format
 msgid "Must enter a whole number for {option_key}!"
-msgstr "¡{option_key} debe ser un número entero!"
+msgstr "{option_key} debe ser un número entero."
 
 #: .\utils\validatorfuncs.py:172
 #, python-brace-format
 msgid "Could not convert '{entry}' to a whole number for {option_key}!"
-msgstr "¡No se pudo convertir '{entry}' a un número entero para {option_key}!"
+msgstr "No se pudo convertir '{entry}' a un número entero para {option_key}."
 
 #: .\utils\validatorfuncs.py:183
 #, python-brace-format
 msgid "Must enter a whole number greater than 0 for {option_key}!"
-msgstr "¡Debes ingresar un número entero mayor que 0 para {option_key}!"
+msgstr "Debes ingresar un número entero mayor que 0 para {option_key}."
 
 #: .\utils\validatorfuncs.py:194
 #, python-brace-format
 msgid "{option_key} must be a whole number greater than or equal to 0!"
-msgstr "¡{option_key} debe ser un número entero mayor o igual que 0!"
+msgstr "{option_key} debe ser un número entero mayor o igual que 0."
 
 #: .\utils\validatorfuncs.py:213
 #, python-brace-format
@@ -1354,30 +1353,30 @@ msgstr ""
 #: .\utils\validatorfuncs.py:243
 #, python-brace-format
 msgid "That matched: {matches}. Please be more specific!"
-msgstr "Coincidencias: {matches}. ¡Sé más específico!"
+msgstr "Coincidencias: {matches}. Sé más concreto."
 
 #: .\utils\validatorfuncs.py:250
 #, python-brace-format
 msgid "Could not find timezone '{entry}' for {option_key}!"
-msgstr "¡No se encontró la zona horaria '{entry}' para {option_key}!"
+msgstr "No se encontró la zona horaria '{entry}' para {option_key}."
 
 #: .\utils\validatorfuncs.py:258
 msgid "Email address field empty!"
-msgstr "¡El campo de dirección de correo electrónico está en blanco!"
+msgstr "El campo de dirección de correo electrónico está en blanco."
 
 #: .\utils\validatorfuncs.py:261
 #, python-brace-format
 msgid "That isn't a valid {option_key}!"
-msgstr "¡Ese valor no es válido para {option_key}!"
+msgstr "Ese valor no es válido para {option_key}."
 
 #: .\utils\validatorfuncs.py:268
 #, python-brace-format
 msgid "No {option_key} entered to set!"
-msgstr "¡No se ingresó ningún valor para {option_key}!"
+msgstr "No se ingresó ningún valor para {option_key}."
 
 #: .\utils\validatorfuncs.py:272
 msgid "Must enter an access type!"
-msgstr "¡Debes ingresar un access type!"
+msgstr "Debes ingresar un access type."
 
 #: .\utils\validatorfuncs.py:276
 #, python-brace-format
@@ -1398,7 +1397,7 @@ msgstr "Ver"
 
 #: .\web\templates\admin\app_list.html:28
 msgid "Change"
-msgstr "Cambio"
+msgstr "Cambiar"
 
 #: .\web\templates\admin\app_list.html:39
 msgid "You don’t have permission to view or edit anything."
